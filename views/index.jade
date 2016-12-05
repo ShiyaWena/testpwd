@@ -1,0 +1,100 @@
+doctype html
+script.
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-87974416-1', 'auto');
+  ga('send', 'pageview');
+
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    title Sign Up
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(name='description', content='')
+    // Le styles
+    link(href='/assets/css/bootstrap.css', rel='stylesheet')
+    style(type='text/css').
+      body {
+      padding-top: 40px;
+      padding-bottom: 40px;
+      background-color: #FFFFFF;
+      }
+      .form-signin {
+      padding: 19px 29px 29px;
+      margin: 0 auto 20px;
+      max-width: 600px;
+      background-color: #FDE8D7;
+      border: 1px solid #e5e5e5;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      border-radius: 5px;
+      -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+      -moz-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+      box-shadow: 0 1px 2px rgba(0,0,0,.05);
+      }
+      .form-signin-heading,
+      .form-signin {
+      font-family: "Times New Roman", Times, serif;
+      margin-bottom: 10px;
+      text-align: center;
+      color: #5C604D;
+      }
+      .form-signin-banner-main {
+      font-family: "Times New Roman", Times, serif;
+      font-style: italic;
+      text-align: center;
+      color: #B96A9A;
+      font-size: 40px;
+      line-height: 40px;
+      }
+      .form-signin-banner-action {
+      font-family: "Times New Roman", Times, serif;
+      font-weight: bold;
+      line-height: 30px;
+      text-align: center;
+      color: #9C1C6B;
+      font-size: 28px;
+      margin: 20px;
+      }
+      .form-signin-text {
+      font-size: 12px;
+      height: auto;
+      margin-bottom: 15px;
+      padding: 1px 9px;
+      }
+      .form-signin input[type="text"],
+      .form-signin input[type="password"] {
+      font-size: 16px;
+      height: auto;
+      margin-bottom: 15px;
+      padding: 7px 9px;
+      }
+    link(href='/assets/css/bootstrap-responsive.css', rel='stylesheet')
+    // HTML5 shim, for IE6-8 support of HTML5 elements
+    //if lt IE 9
+      script(src='/assets/js/html5shiv.js')
+    // Fav and touch icons
+    link(rel='apple-touch-icon-precomposed', sizes='144x144', href='/assets/ico/apple-touch-icon-144-precomposed.png')
+    link(rel='apple-touch-icon-precomposed', sizes='114x114', href='/assets/ico/apple-touch-icon-114-precomposed.png')
+    link(rel='apple-touch-icon-precomposed', sizes='72x72', href='/assets/ico/apple-touch-icon-72-precomposed.png')
+    link(rel='apple-touch-icon-precomposed', href='/assets/ico/apple-touch-icon-57-precomposed.png')
+    link(rel='shortcut icon', href='/assets/ico/favicon.png')
+  body
+    .container
+      form.form-signin(action='/quotes' method = 'POST')
+        p.form-signin-banner-main Put your skin in the hands 
+         br 
+         | of some one whose passion it 
+         br 
+         | to make it beautiful 
+        p.form-signin-banner-action Sign up today for free beauty tips
+         br 
+         | delivered straight to your inbox
+        input.input-block-level(type='text', placeholder='Name', name='name')
+        input.input-block-level(type='text', placeholder='Email Address', name='email')
+        button.btn.btn-large(type='submit' onClick="ga('set', 'signUp', 1);") Sign me up
+        p.form-signin-text
+         a(href = "http://507dbjiio2pdtg7ksa1rqdw90j.hop.clickbank.net/" onClick="ga('set', 'noThanks', 1);") No thank you
+     
